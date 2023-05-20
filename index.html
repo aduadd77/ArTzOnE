@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArTzOnE</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b70d2326aa.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/Logo.png" class="Logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Technology aficionado</p>
+            <h1>Hi, I'm <span>Adarsh</span> from India</h1>
+        </div>
+    </div>
+</div>
+<!-- ---------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.jpg">
+            </div>
+            <div class="about-col-2">
+            <h1 class="sub-title">About me</h1>
+            <p>An independent and self-motivated undergraduate with          strong problem-solving skills, ability to work in a team and leadership experience through extracurricular activities. Seeking to leverage my technical skills and continue learning in a challenging and dynamic professional setting.</p>
+
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                    <li><span>AI/ML</span><br>Training and Empowering models using AI/ML</li>
+                    <li><span>Java/Python</span><br>Software development using JAVA and Python </li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+                <ul>
+                    <li><span>Internship(Jan 2023-July 2023)</span><br>GeeksforGeeks Intern as a Technical Writer</li>
+                    <li><span>National Level Ideathons</span><br>Enthusiastically graced national-level ideathons at IIT Kanpur, NMIMS Mumbai, BITS Pilani, NIT Durgapur.</li>
+                    <li><span>ICMIB-2023</span><br>Hosted and participated in the International Conference on Machine Learning, IoT and Big Data.</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="education">
+                <ul>
+                    <li><span>2020 - Current(B. Tech)</span><br>Indira Gandhi Institute of Technology, Sarang</li>
+                    <li><span>2018 - 2020(Senior Secondary)</span><br>Mother's Public School, Bhubneswar</li>
+                    <li><span>2008 - 2018(Secondary Education)</span><br>Carmel English Medium School, Phulbani</li>
+                </ul>
+            </div>
+            </div>
+         </div>
+    </div>
+</div>  
+<!-- -----------Services-----------  -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>AI/ML</h2>
+                <p>AI/ML aficionado driven to unravel complexities, harness data, and engineer intelligent solutions for transformative impact.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-figma"></i>
+                <h2>UI/UX</h2>
+                <p>Passionate UI/UX Designer crafting intuitive digital experiences with a focus on user-centric design principles.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>JAVA/Python Developer</h2>
+                <p>Experienced Java/Python developer proficient in building robust software solutions with a passion for innovation.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- -----------portfolio----------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work1.png">
+                <div class="layer">
+                    <h3>DailyStonks</h3>
+                    <p>DailyStonks is a platform that connects SEBI registered stock analysts with regular investors. The platform allows stock analysts to register and offer their services, including stock analysis and recommendations, to users who subscribe to their services.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work2.png">
+                <div class="layer">
+                    <h3>Brainwavez</h3>
+                    <p>A machine learning (ML) model that utilizes a 32-channel electroencephalography (EEG) machine to monitor the electrical brain activity of human beings for the prediction of stress (in percentage).</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work3.jpg">
+                <div class="layer">
+                    <h3>Real Estate Budget Estimation</h3>
+                    <p>A real estate budget estimation system that accurately predicts the costs associated with properties taking into account the various factors such as location, property size, market trends, amenities, and construction costs in a futuristic aspect.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-- -----------Contact----------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i>adarshranjanadu77@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>7735378440</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/adarsh-ranjan-tripathy-599b6a208"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/aduadd77"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.instagram.com/aduadd77/#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://twitter.com/aduadd77"><i class="fa-brands fa-twitter-square"></i></a>
+                </div>
+                <a href="images/My Resume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © ArTzOnE. Made with ❤️ by Adarsh</p>
+    </div>
+</div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+    var sidemenu=document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwpsI25sMOshnduPq_y6GTrBZchgCNccm03HKsRNXOryQfrx--KCK1uwA9DIjFaUHuCkQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg= document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML= "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
