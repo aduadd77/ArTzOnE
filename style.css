@@ -14,7 +14,7 @@ body{
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url(new-background.png);
+    background-image: url(my-background.png);
     background-attachment: fixed;
     background-size: cover;
     background-position: center; 
